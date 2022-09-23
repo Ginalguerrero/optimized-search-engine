@@ -1,16 +1,26 @@
+
+/*changed the boxsizing to content-box which renders elements actual size without padding and borders*/
 * {
-    box-sizing: border-box;
+    box-sizing: content-border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 body {
     background-color: #d9dcd6;
 }
 
+div.header {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+ 
 .header {
-    padding: 20px;
+    padding: 8px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 7px;
     background-color: #2a607c;
     color: #ffffff;
 }
@@ -41,6 +51,10 @@ body {
     margin-left: 25px;
 }
 
+/*changed ul to nav for more organized editing for css file also added inline block*/
+nav {
+    display: inline-block }
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -50,8 +64,8 @@ p {
     font-size: 16px;
 }
 
+/*decreased the height of hero to 0px to reduce space inbwteen contents*/
 .hero {
-    height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -69,21 +83,25 @@ p {
     margin-left: 25px;
 }
 
+
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    
 }
-
+/*added position to relative to set it to default and reduced padding half the original px so it doesnt overlap*/
 .benefits {
     margin-right: 20px;
-    padding: 20px;
+    padding: 10px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    position: relative;
+
 }
 
 .benefit-lead {
@@ -132,6 +150,14 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+}
+
+.digitalmarketing img {
+    margin: auto;
+    max-width: 300px;
+    max-height: 300px;
+    position: fixed;
+
 }
 
 .search-engine-optimization {
