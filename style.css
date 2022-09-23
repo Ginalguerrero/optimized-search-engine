@@ -64,9 +64,8 @@ p {
     font-size: 16px;
 }
 
-/*decreased the height of hero to 0px */
+/*decreased the height of hero to 0px to reduce space inbwteen contents*/
 .hero {
-    height: 0px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
